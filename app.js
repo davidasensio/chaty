@@ -50,7 +50,7 @@ io.sockets.on('connection', function(socket) {
 	});
 });
 
-var port = 8080;
-server.listen(process.env.PORT || port, function() {
+var port = 3000;
+server.listen(port, function() {
 	console.log('Listening on port: ' + port);
 });
