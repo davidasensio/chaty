@@ -51,6 +51,6 @@ io.sockets.on('connection', function(socket) {
 });
 
 var port = 8080;
-server.listen(port, function() {
+server.listen(process.env.PORT || port, function() {
 	console.log('Listening on port: ' + port);
 });
